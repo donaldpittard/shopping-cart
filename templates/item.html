@@ -1,0 +1,11 @@
+<div class="card">
+    <a href="{{ path_for('product.get', {slug: product.slug}) }}">
+        <img class="card-img-top" src="{{ product.image }}" alt="{{ product.title }}">
+    </a>
+    <div class="card-body">
+        <h4 class="card-title">
+            <a href="{{ path_for('product.get', {slug: product.slug}) }}">{{ product.title }}</a>
+        </h4>
+        <p class="card-text">{{ product.description }}</p>
+    </div>
+</div>
